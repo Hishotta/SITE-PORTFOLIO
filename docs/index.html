@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Présentation - [Ton Nom]</title>
+    <link rel="stylesheet" href="mainStyle.css" />
+</head>
+<body>
+<main class="card" role="main" aria-labelledby="title">
+    <div class="emoji" aria-hidden="true">👋</div>
+    <h1 id="title">Bonjour, je suis [Ton Nom]</h1>
+    <p class="lead">
+        Développeur passionné / Designer / Étudiant… <br>
+        Bienvenue sur ma page personnelle.
+    </p>
+
+    <div class="meta">
+        <div>🌐 Basé à [Ville]</div>
+        <div>✉️ <a href="mailto:contact@example.com">contact@example.com</a></div>
+        <div>💼 [Ton métier / spécialité]</div>
+    </div>
+
+    <a class="cta" href="https://tonportfolio.com" target="_blank">Voir mon portfolio</a>
+
+    <footer>© <span id="year"></span> [Ton Nom] — Tous droits réservés</footer>
+</main>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
