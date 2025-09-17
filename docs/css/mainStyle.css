@@ -73,6 +73,7 @@ p.lead{
     flex-wrap:wrap;
     color:var(--muted);
     font-size:0.95rem;
+    margin-bottom: 1rem;
 }
 
 a.cta{
@@ -86,6 +87,7 @@ a.cta{
     font-weight:600;
     box-shadow: 0 6px 20px rgba(255,154,80,0.12);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 0.25rem;
 }
 a.cta:hover{
     transform: translateY(-3px);
@@ -97,4 +99,35 @@ footer{ margin-top:1.5rem; color:var(--muted); font-size:0.85rem }
 @media (max-width:420px){
     .card{ padding:1.2rem }
     .emoji{ font-size:48px }
+}
+
+.projet{
+    width:100%;
+    max-height: 100%;
+    max-width:250px;
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius:16px;
+    padding:1rem;
+    box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.04);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px; /* largeur de chaque colonne */
+    gap: 100px;
+}
+
+.grid-container > div {
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    text-align: center;
 }
